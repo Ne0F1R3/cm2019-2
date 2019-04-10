@@ -1,0 +1,105 @@
+1- Crete project
+2 - Work in two parts
+	- Storyboard
+	- View Controller
+3- Say that only run in iphone in Portrait orientation.
+
+4 - Run de Simulator
+5- Building the User Interface
+6- Split into seven rows
+7- First, we’re going to split the main view into two subviews:
+– top view with a label displaying current value (2/7),
+– bottom view with all calculator buttons (5/7)
+
+8 - Drag and drop two views 
+9 -  constraints: Add the top, left, and right = 0
+	- Safe Area
+	-Click Add 3 Constraints to apply the changes.
+10 - Move view to top view 
+	- pop up 
+	- select Equal Heights.
+
+11 - select the height constraint which is called “View.height = height”
+	- go to its Size inspector and set the Multiplier to 2:7. Hit enter
+
+take care
+
+12 - Select the bottom view.
+	- Add New Constraints
+	- set to 0 for all four constrains (top, left, right, bottom)
+	- Click Add 4 Constraints
+
+13 -  Add a label to the top view
+	- Add New Constraints menu pin it to left, right, and bottom with 0 
+
+14 - drag from the label to its container view 
+	- select Equal Heights constraint.
+
+15 - Constraints menu for the label
+	- Select “Label.height = height” constraint
+	- Go to its Attributes Inspector and set its Multiplier to 1:2
+
+16 - Select the label and open its Attributes inspector
+	- Text of label to “0”
+	- Alignment to Right
+	- increase the font size to 90
+	- set its style to Light (or Thin)
+	- change the Color to white.
+
+17 - Select the view (2/7)
+	- view background color to black. 
+
+18 - The main View
+	- Select the main view in the outline view and then in Attributes Inspector set its Background to black.
+
+19- Open the ViewController.swift
+	-Add
+
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+ return .lightContent
+}
+
+
+20- Open the Main.storyboard file.
+
+21 - Add 19 buttons to the view
+	- Default title for each.
+		- AC
+		- +/-
+		- %
+		- ÷
+		- 7
+		- 8
+		- 9
+		- ×
+		- 4
+		- 5
+		- 6
+		- -
+		- 1 
+		- 2
+		- 3
+		- +
+		- 0
+		- .
+		- =
+
+22 - use Stack views (horizontal and vertical).
+	- Repeat the process of selecting each row 
+	- Select all and  transform to one vertical stack view.
+
+23 - Add some Auto Layout
+
+24 - Select the master stack view and add the following 4 constraints: top, left, right, and bottom set to 0. 
+	- Make sure that the Constraint to margins option is not selected.
+25 - 
+
+
+
+///////http://www.appbuildingblocks.com/build-ios-calculator-app-tutorial-part-1/////////////
+
+
+
+
+
+
