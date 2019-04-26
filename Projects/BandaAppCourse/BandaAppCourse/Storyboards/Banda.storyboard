@@ -13,7 +13,7 @@
         <!--Perfil-->
         <scene sceneID="ZtB-RH-fxM">
             <objects>
-                <viewController id="kLP-xS-u3X" customClass="ViewController" customModule="BandaAppCourse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IdBanda" id="kLP-xS-u3X" customClass="BandaVC" customModule="BandaAppCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wg5-L1-qbu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,11 +37,25 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2qB-qO-iC3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Perfil" id="054-8n-Hcp"/>
+                    <navigationItem key="navigationItem" title="Perfil" id="054-8n-Hcp">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="bEs-Ip-El5">
+                            <connections>
+                                <segue destination="5DU-Pm-Ujh" kind="show" id="kwO-3d-nsc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfn-2G-JOJ" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="377" y="967"/>
+        </scene>
+        <!--Credits-->
+        <scene sceneID="TQZ-al-ah3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Credits" id="5DU-Pm-Ujh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgu-24-Ggu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="358"/>
         </scene>
         <!--Discografía-->
         <scene sceneID="wpf-r6-LwO">
@@ -136,6 +150,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LzC-mP-l3z"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Discografía" id="xkh-jQ-6H2">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="ezQ-J0-lj1">
+                            <connections>
+                                <segue destination="5DU-Pm-Ujh" kind="show" id="nRD-Om-2S2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUD-Ze-W6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,6 +187,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OPK-47-HOF"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Ver más info" id="ap7-B0-Hky">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="s5J-C7-KP1">
+                            <connections>
+                                <segue destination="5DU-Pm-Ujh" kind="show" id="MBl-v5-odt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageChange" destination="ahv-D3-NP3" id="IGb-kF-ddz"/>
                         <outlet property="labelMoreInfo" destination="9Mb-0p-eFL" id="9xJ-mW-z8X"/>
@@ -195,6 +227,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="f1i-0g-6I6"/>
+        <segue reference="475-dd-TCw"/>
+        <segue reference="MBl-v5-odt"/>
     </inferredMetricsTieBreakers>
 </document>

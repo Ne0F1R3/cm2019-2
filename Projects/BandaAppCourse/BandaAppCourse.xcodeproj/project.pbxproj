@@ -17,6 +17,9 @@
 		701CACC12272F1C300802AD4 /* Souvenirs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701CACC02272F1C300802AD4 /* Souvenirs.storyboard */; };
 		70705B82227335900040F5ED /* ClassDiscography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70705B81227335900040F5ED /* ClassDiscography.swift */; };
 		70705B84227335B40040F5ED /* ClassMoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70705B83227335B40040F5ED /* ClassMoreInfo.swift */; };
+		70E1883622735CBE0002907B /* Credits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E1883522735CBE0002907B /* Credits.storyboard */; };
+		70E18838227378C10002907B /* CreditsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E18837227378C10002907B /* CreditsVC.swift */; };
+		70E1883A22737AD10002907B /* BandaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1883922737AD10002907B /* BandaVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		701CACC02272F1C300802AD4 /* Souvenirs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Souvenirs.storyboard; sourceTree = "<group>"; };
 		70705B81227335900040F5ED /* ClassDiscography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDiscography.swift; sourceTree = "<group>"; };
 		70705B83227335B40040F5ED /* ClassMoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMoreInfo.swift; sourceTree = "<group>"; };
+		70E1883522735CBE0002907B /* Credits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credits.storyboard; sourceTree = "<group>"; };
+		70E18837227378C10002907B /* CreditsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
+		70E1883922737AD10002907B /* BandaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandaVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +85,13 @@
 			isa = PBXGroup;
 			children = (
 				701CACBC2272F19900802AD4 /* Banda.storyboard */,
+				70E1883922737AD10002907B /* BandaVC.swift */,
 				70705B83227335B40040F5ED /* ClassMoreInfo.swift */,
 				70705B81227335900040F5ED /* ClassDiscography.swift */,
 				701CACBE2272F1B500802AD4 /* Trivia.storyboard */,
 				701CACC02272F1C300802AD4 /* Souvenirs.storyboard */,
+				70E1883522735CBE0002907B /* Credits.storyboard */,
+				70E18837227378C10002907B /* CreditsVC.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -147,6 +156,7 @@
 			files = (
 				701CACB42272DA8900802AD4 /* LaunchScreen.storyboard in Resources */,
 				701CACBD2272F19900802AD4 /* Banda.storyboard in Resources */,
+				70E1883622735CBE0002907B /* Credits.storyboard in Resources */,
 				701CACBF2272F1B500802AD4 /* Trivia.storyboard in Resources */,
 				701CACB12272DA8900802AD4 /* Assets.xcassets in Resources */,
 				701CACAF2272DA8700802AD4 /* Main.storyboard in Resources */,
@@ -162,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				701CACAC2272DA8700802AD4 /* ViewController.swift in Sources */,
+				70E18838227378C10002907B /* CreditsVC.swift in Sources */,
 				70705B82227335900040F5ED /* ClassDiscography.swift in Sources */,
+				70E1883A22737AD10002907B /* BandaVC.swift in Sources */,
 				701CACAA2272DA8700802AD4 /* AppDelegate.swift in Sources */,
 				70705B84227335B40040F5ED /* ClassMoreInfo.swift in Sources */,
 			);

@@ -27,4 +27,6 @@ class ClassMoreInfo: UIViewController {
         self.labelMoreInfo.text = myText
         
     }
+    
+    
 }

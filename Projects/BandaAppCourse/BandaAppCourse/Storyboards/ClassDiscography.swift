@@ -25,9 +25,11 @@ class ClassDiscography: UIViewController {
             destination!.myImage = "aKindOfMagic.jpg"
             destination!.myText = "Título: A Kind of Magic \n Año: 1986 \n Canciones: --- \n Duración por cada canción: --- \n Precio: --- \n Precio por disco: ---"
             
-        }else {
+        }else if segue.identifier == "snd_image3"{
             destination!.myImage = "jazz.jpg"
             destination!.myText = "Título: Jazz \n Año: 1978 \n Canciones: --- \n Duración por cada canción: --- \n Precio: --- \n Precio por disco: ---"
         }
     }
+    
+    /*@IBAction func unwindToDisco (_ sender: UIStoryboardSegue){}*/
 }
