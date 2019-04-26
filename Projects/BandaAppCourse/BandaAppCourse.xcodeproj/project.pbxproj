@@ -15,6 +15,8 @@
 		701CACBD2272F19900802AD4 /* Banda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701CACBC2272F19900802AD4 /* Banda.storyboard */; };
 		701CACBF2272F1B500802AD4 /* Trivia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701CACBE2272F1B500802AD4 /* Trivia.storyboard */; };
 		701CACC12272F1C300802AD4 /* Souvenirs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701CACC02272F1C300802AD4 /* Souvenirs.storyboard */; };
+		70705B82227335900040F5ED /* ClassDiscography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70705B81227335900040F5ED /* ClassDiscography.swift */; };
+		70705B84227335B40040F5ED /* ClassMoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70705B83227335B40040F5ED /* ClassMoreInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		701CACBC2272F19900802AD4 /* Banda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Banda.storyboard; sourceTree = "<group>"; };
 		701CACBE2272F1B500802AD4 /* Trivia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trivia.storyboard; sourceTree = "<group>"; };
 		701CACC02272F1C300802AD4 /* Souvenirs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Souvenirs.storyboard; sourceTree = "<group>"; };
+		70705B81227335900040F5ED /* ClassDiscography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDiscography.swift; sourceTree = "<group>"; };
+		70705B83227335B40040F5ED /* ClassMoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMoreInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				701CACBC2272F19900802AD4 /* Banda.storyboard */,
+				70705B83227335B40040F5ED /* ClassMoreInfo.swift */,
+				70705B81227335900040F5ED /* ClassDiscography.swift */,
 				701CACBE2272F1B500802AD4 /* Trivia.storyboard */,
 				701CACC02272F1C300802AD4 /* Souvenirs.storyboard */,
 			);
@@ -156,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				701CACAC2272DA8700802AD4 /* ViewController.swift in Sources */,
+				70705B82227335900040F5ED /* ClassDiscography.swift in Sources */,
 				701CACAA2272DA8700802AD4 /* AppDelegate.swift in Sources */,
+				70705B84227335B40040F5ED /* ClassMoreInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

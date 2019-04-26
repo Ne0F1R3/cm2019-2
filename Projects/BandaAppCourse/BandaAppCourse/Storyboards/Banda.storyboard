@@ -13,7 +13,6 @@
         <!--Perfil-->
         <scene sceneID="ZtB-RH-fxM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfn-2G-JOJ" sceneMemberID="firstResponder"/>
                 <viewController id="kLP-xS-u3X" customClass="ViewController" customModule="BandaAppCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wg5-L1-qbu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -40,14 +39,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Perfil" id="054-8n-Hcp"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfn-2G-JOJ" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="377" y="967"/>
         </scene>
         <!--Discografía-->
         <scene sceneID="wpf-r6-LwO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gUD-Ze-W6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Discografía" id="8uc-ZS-dfi" sceneMemberID="viewController">
+                <viewController title="Discografía" id="8uc-ZS-dfi" customClass="ClassDiscography" customModule="BandaAppCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vZq-1W-ljf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +71,7 @@
                                                 <rect key="frame" x="0.0" y="26.5" width="85" height="30.5"/>
                                                 <state key="normal" title="Ver más info"/>
                                                 <connections>
-                                                    <segue destination="GFJ-VB-p2P" kind="show" id="f1i-0g-6I6"/>
+                                                    <segue destination="GFJ-VB-p2P" kind="show" identifier="snd_image1" id="f1i-0g-6I6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -99,7 +98,7 @@
                                                 <rect key="frame" x="0.0" y="26.5" width="85" height="30.5"/>
                                                 <state key="normal" title="Ver más info"/>
                                                 <connections>
-                                                    <segue destination="GFJ-VB-p2P" kind="show" id="475-dd-TCw"/>
+                                                    <segue destination="GFJ-VB-p2P" kind="show" identifier="snd_image3" id="475-dd-TCw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -126,7 +125,7 @@
                                                 <rect key="frame" x="0.0" y="26.5" width="85" height="30.5"/>
                                                 <state key="normal" title="Ver más info"/>
                                                 <connections>
-                                                    <segue destination="GFJ-VB-p2P" kind="show" id="nDy-kx-GIX"/>
+                                                    <segue destination="GFJ-VB-p2P" kind="show" identifier="snd_image2" id="nDy-kx-GIX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -138,28 +137,45 @@
                         <viewLayoutGuide key="safeArea" id="LzC-mP-l3z"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUD-Ze-W6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1124" y="967"/>
         </scene>
         <!--Ver más info-->
         <scene sceneID="V81-Sk-6Za">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yLe-cP-GgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Ver más info" id="GFJ-VB-p2P" sceneMemberID="viewController">
+                <viewController title="Ver más info" id="GFJ-VB-p2P" customClass="ClassMoreInfo" customModule="BandaAppCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h69-yJ-iTe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-D3-NP3">
+                                <rect key="frame" x="67" y="127" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mb-0p-eFL">
+                                <rect key="frame" x="94" y="342" width="187" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OPK-47-HOF"/>
                     </view>
+                    <connections>
+                        <outlet property="imageChange" destination="ahv-D3-NP3" id="IGb-kF-ddz"/>
+                        <outlet property="labelMoreInfo" destination="9Mb-0p-eFL" id="9xJ-mW-z8X"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLe-cP-GgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970" y="967"/>
+            <point key="canvasLocation" x="1968.8" y="966.56671664167925"/>
         </scene>
         <!--Banda-->
         <scene sceneID="jcy-TL-sLR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UYt-gI-q0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7iV-na-az8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Banda" id="r1z-Oo-MXD"/>
                     <toolbarItems/>
@@ -173,11 +189,12 @@
                         <segue destination="kLP-xS-u3X" kind="relationship" relationship="rootViewController" id="cjY-1G-Vdf"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UYt-gI-q0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-372" y="967"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="475-dd-TCw"/>
+        <segue reference="f1i-0g-6I6"/>
     </inferredMetricsTieBreakers>
 </document>
