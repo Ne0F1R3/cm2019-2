@@ -11,15 +11,15 @@ import UIKit
 class DinamicLabelVC: UIViewController {
 
     @IBOutlet weak var SongName: UILabel!
-    
+    //image
     @IBOutlet weak var Description: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        SongName.text = song[miIndex]
-        
-        Description.text = description[ miIndex ]
+        SongName.text = song_array[miIndex]
+        //nobre UIIMage.image = UIImage([] + jpg)
+        Description.text = description_array[miIndex ]
     }
     
 
