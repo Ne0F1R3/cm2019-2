@@ -1,0 +1,69 @@
+import UIKitimport UIKit
+
+
+/*optionals with struct*/
+
+var str = "Hello, playground"
+
+//optionals
+struct Book{
+    let name: String
+    let publicationYear: Int?
+}
+
+
+let fistBookHarryPotter = Book(name: "Piedra", publicationYear: 1997)
+
+let secondBookHarryPotter = Book(name: "Chamber of Secrerts", publicationYear: 1998)
+
+let lastBookHarryPotter = Book(name: "otro nuevo magio", publicationYear: nil)
+
+
+let Books = [fistBookHarryPotter, secondBookHarryPotter, lastBookHarryPotter]
+
+
+//fistBookHarryPotter.name
+//secondBookHarryPotter.name
+
+//unwrap
+
+/*for i in Books {
+ print("Nombre: \(i.name) \n ")
+ if i.publicationYear != nil {
+ print(i.publicationYear!)
+ }else{
+ print("Nombre desconocido")
+ }
+ //(Año: \(i.publicationYear)")
+ }*/
+
+// optional linking
+for i in Books {
+    if let constant = i.publicationYear {//if not nil it
+        //Assigns the existing value to a constant
+        print(i.name)
+        print(constant)
+    }else{
+        print(i.name)
+        print("it has no value")
+    }
+}
+
+
+/*optionals with functions*/
+
+var str = "Hello, playground"
+
+func printFullName(firstName: String, middleName: String? , lastName: String){
+    if let middleName_temp = middleName {
+        print(firstName, middleName_temp, lastName)
+    }else{
+         print(firstName, lastName)
+    }
+    
+}
+
+printFullName(firstName: "Marduk", middleName: nil, lastName: "Pérez")
+
+
+
