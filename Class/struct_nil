@@ -1,0 +1,49 @@
+//import UIKit
+import Foundation
+
+//convertir la estructura o la clase en una escrutura opcional
+//El algoritmo nos permite
+
+//_Inicializadores falibles o inicializadore que fallan
+
+
+
+struct Book{
+    let name: String
+    let publicYear: Int?
+    
+    init?(name: String, publicYear: Int?){
+        if(name == "La novela"){
+            return nil
+        }
+        
+        self.name = name
+        self.publicYear = publicYear
+    }  
+}
+
+let first = Book(name: "Harry Potter 1", publicYear: 1997)
+let second = Book(name: "Harry Potter 2", publicYear: 1997)
+let last = Book(name: "Harry Potter 3", publicYear: 1997)
+
+
+
+let nuevo = Book(name: "La novela", publicYear: nil)
+
+//print(nuevo)
+
+
+let Books = [first, second, last, nuevo]
+
+for item in Books{
+
+    if let item = item{ //En caso de que exista
+    print("Nombre del libro: \(item.name) \n")
+    
+    if let publicYear = item.publicYear{ //En caso de que exista
+        print("El anio de publicacion: \(publicYear)") //usamos el primero
+    }else{
+        print("El anio de publicacion: No conocido")
+   } }else{
+    print("Existe un libro que no se agregó \(item)")}
+}
