@@ -20,7 +20,6 @@ class ClassMoreInfo: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.labelMoreInfo.adjustsFontSizeToFitWidth = true
         
         self.imageChange.image = UIImage(named: myImage)
         
